@@ -1,0 +1,232 @@
+        body {
+            background-color: black !important;
+        }
+        
+        @media only screen and (min-width:510px) {
+            .mobileAlert {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                top: 0px;
+                background-color: #005A5B;
+                margin: auto;
+                z-index: 9999999999999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mobileAlert>.mobileAlertKutu {
+                position: relative;
+                margin: auto;
+                margin-top: 5vw;
+                width: 50%;
+                height: 25vw;
+                background-color: white;
+                border: 4px solid black;
+                border-radius: 3vw;
+                padding: 2vw;
+                box-shadow: 0px 0px 10px black;
+                margin-top: auto;
+            }
+            .mobileAlert>.mobileAlertKutu>.mobileAlerttext {
+                position: relative;
+                color: black;
+                font-size: 3vw;
+                font-family: Bebas Neue;
+                top: 2vw;
+            }
+        }
+        
+        @media only screen and (max-width:510px) {
+            .mobileAlert {
+                display: none;
+            }
+            .mobileAlert>p {
+                display: none;
+            }
+        }
+        
+        .header {
+            position: fixed;
+            width: 100vw;
+            background-color: black;
+            height: 60px;
+            border-radius: 0px 0px 15px 15px;
+            z-index: 100;
+            box-shadow: 0px 0px 10px white;
+            font-family: samsung_sharp_sansregular;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+        
+        .regApp {
+            position: relative;
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            background: linear-gradient(black 40%, #101a32, #000ca0);
+            overflow: auto;
+            font-size: 4vw;
+            width: 89vw;
+            height: 81vh;
+            background-color: #ffffff00;
+            box-shadow: 0px 0px 10px #000ca0;
+            border-radius: 2vw;
+            margin: auto;
+            top: 95px;
+            padding: 6vw;
+            color: white;
+            font-family: samsung_sharp_sansbold;
+            text-align: center;
+        }
+        
+        .loginApp {
+            position: relative;
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            background: linear-gradient(#181e28 40%, #000000, #000000);
+            overflow: auto;
+            font-size: 4vw;
+            width: 89vw;
+            height: 81vh;
+            background-color: #ffffff00;
+            box-shadow: 0px 0px 10px #14ff8e;
+            border-radius: 2vw;
+            margin: auto;
+            top: 95px;
+            padding: 6vw;
+            color: white;
+            font-family: samsung_sharp_sansbold;
+            text-align: center;
+        }
+        
+        .inputColor {
+            background-color: rgba(0, 0, 0, 0) !important;
+            color: white !important;
+        }
+        
+        .baslik {
+            color: white;
+            font-family: samsung_sharp_sansbold;
+        }
+        
+        .bakiye {
+            position: fixed;
+            width: 100%;
+            height: 17vw;
+            border-radius: 20px 20px 0px 0px;
+            bottom: 0px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid white;
+            font-size: 4vw;
+            padding: 10px;
+            font-family: samsung_sharp_sansbold;
+        }
+        
+        .secmeEkrani {
+            position: relative;
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            /* background: linear-gradient(#181e28 40%, #000000, #000000); */
+            overflow: auto;
+            font-size: 4vw;
+            width: 89vw;
+            height: 75vh;
+            background-color: #000000;
+            box-shadow: 0px 0px 20px #14ff8e;
+            animation: bgColor 5s infinite;
+            border-radius: 2vw;
+            margin: auto;
+            top: 95px;
+            padding: 6vw;
+            color: white;
+            font-family: samsung_sharp_sansbold;
+            text-align: center;
+        }
+        
+        @keyframes bgColor {
+            0% {
+                box-shadow: 0px 0px 20px #14ff8e;
+            }
+            25% {
+                box-shadow: 0px 0px 20px #ff0000;
+            }
+            50% {
+                box-shadow: 0px 0px 20px #5100ff;
+            }
+            75% {
+                box-shadow: 0px 0px 20px #00d0ff;
+            }
+            100% {
+                box-shadow: 0px 0px 20px #14ff8e;
+            }
+        }
+        
+        main>img {
+            width: 540px;
+            margin-bottom: -4px;
+        }
+        
+        .screen {
+            border: 1px solid #555;
+            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.9);
+            margin: 20px 0;
+            margin-top: 0;
+            width: 540px;
+        }
+        
+        section {
+            display: flex;
+            margin-bottom: 22px;
+            align-content: space-around;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        section>label,
+        section>div,
+        section>span {
+            background-color: darkred;
+            border: 0px outset #900;
+            border-bottom: 4px solid #600;
+            border-radius: 6px 5px 0 0;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            width: 99px;
+            text-align: center;
+        }
+        
+        section>span {
+            background-color: #151520;
+            border-color: #151520;
+        }
+        
+        section>div:active {
+            background-color: black;
+        }
+        
+        input[type="checkbox"] {
+            z-index: 2;
+            opacity: 0;
+            width: 25px;
+            height: 25px;
+        }
+        
+        input[type="checkbox"]+label {
+            margin-left: -30px;
+            z-index: 1;
+        }
+        
+        input[type="checkbox"]:checked+label {
+            background-color: white;
+            color: black;
+        }
+        
+        input[type="checkbox"]:disabled+label {
+            background-color: #400;
+            color: #900;
+            border-color: #400;
+        }
